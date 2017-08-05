@@ -1,0 +1,440 @@
+<style type="text/css">
+body {
+  background-color: transparent !important;
+}
+#bg {
+    position: fixed;
+    top: -200px;
+    left: 0;
+    width: 100%;
+}
+
+body
+{
+  padding: 50px;
+}
+
+.animate
+{
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;  
+}
+
+.blue
+{
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+  background-color: #E74C3C;
+  border-bottom: 5px solid #BD3E31;
+  text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+  background-color: #82BF56;
+  border-bottom: 5px solid #669644;
+  text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+  background-color: #F2CF66;
+  border-bottom: 5px solid #D1B358;
+  text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+
+@import url('http://fonts.googleapis.com/css?family=Lato');
+
+body, html{
+  height: 100%;
+  background: #222222;
+  font-family: 'Lato', sans-serif;
+}
+
+.container{
+  display: inline-block;
+  position: relative;
+  height: auto;
+  /*width: 500px;*/
+  float:left;
+  top: 75%;
+  left: 35%;
+}
+
+h2 {
+  color: #AAAAAA;
+}
+
+.container ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  height: 151px;
+}
+
+ul li{
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+  float: left;
+  width: 30%;
+  /*height: 100px;*/
+  height: 50px;
+}
+
+ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li label{
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  display: block;
+  position: relative;
+  font-weight: 300;
+  padding: 15px 100px 25px 60px;
+  margin: 40px auto;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+ul li:hover label{
+  color: #000000;
+}
+
+ul li .check{
+  display: block;
+  position: absolute;
+  border: 5px solid #AAAAAA;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 60px;
+  left: 20px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+
+ul li:hover .check {
+  border: 5px solid #000000;
+}
+
+ul li .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+  left: 5px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+  /*border: 5px solid #0DFF92;*/
+  border: 5px solid #82BF56;
+}
+
+input[type=radio]:checked ~ .check::before{
+  /*background: #0DFF92;*/
+  background: #82BF56;
+}
+
+input[type=radio]:checked ~ label{
+  /*color: #0DFF92;*/
+  color: #82BF56;
+}
+
+.signature {
+  margin: 10px auto;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.signature p{
+  text-align: center;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 0.85em;
+  color: #AAAAAA;
+}
+
+.signature .much-heart{
+  display: inline-block;
+  position: relative;
+  margin: 0 4px;
+  height: 10px;
+  width: 10px;
+  background: #AC1D3F;
+  border-radius: 4px;
+  -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.signature .much-heart::before, 
+.signature .much-heart::after {
+    display: block;
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #AC1D3F;
+  top: -4px;
+}
+
+.signature .much-heart::after {
+  bottom: 0;
+  top: auto;
+  left: -4px;
+}
+
+.signature a {
+  color: #AAAAAA;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buttons {
+    position: relative;
+    bottom: 120px;
+    left: 520px;
+}
+
+.radio-buttons {
+    position: relative;
+    bottom: 10px;
+    left: 200px;
+}
+
+.hotspots a {
+  color: #696969 !important;
+  font-size: 20px;
+}
+
+.hotspots a:hover {
+  color: #a9a9a9 !important;
+}
+
+.hotspots a:active {
+  border-bottom: 0px !important;
+}
+
+#hotspot_1 {
+    position: absolute;
+    left: 80px;
+    top: 260px;
+}
+
+#hotspot_2 {
+    position: absolute;
+    left: 325px;
+    top: 260px;
+}
+
+#hotspot_3 {
+    position: absolute;
+    left: 467px;
+    top: 410px;
+}
+
+#hotspot_4 {
+    position: absolute;
+    left: 597px;
+    top: 458px;
+}
+
+#hotspot_5 {
+    position: absolute;
+    left: 632px;
+    top: 368px;
+}
+
+#hotspot_6 {
+    position: absolute;
+    left: 791px;
+    top: 428px;
+}
+
+#hotspot_7 {
+    position: absolute;
+    left: 1034px;
+    top: 359px;
+    width: 200px;
+}
+
+#hotspot_8 {
+    position: absolute;
+    left: 623px;
+    top: 195px;
+    width: 200px;
+}
+
+#hotspot_9 {
+    position: absolute;
+    left: 351px;
+    top: 43px;
+    width: 200px;
+}
+
+#hotspot_10 {
+    position: absolute;
+    left: 624px;
+    top: 555px;
+    width: 200px;
+}
+
+.title {
+    position: absolute;
+    top: 5px;
+    left: 750px;
+}
+
+.title a {
+  color: #191919;
+  font-size: 50px;
+}
+
+.title a:active {
+   transform:none;
+   border-bottom: 0px;
+}
+
+.subtitle {
+    position: absolute;
+    left: 1000px;
+    top: 30px;
+}
+
+.subtitle a {
+    color: #191919;
+    padding: 0 40px 0 40px;
+    font-size: 18px;
+    height: 20px;
+
+}
+
+.subtitle a:active {
+   transform:none;
+   border-bottom: 0px;
+}
+
+</style>
+<!doctype html>
+
+
+
+<html lang="en">
+<head>
+  <title>InstaMap</title>
+  <meta name="description" content="The Instagram Map">
+  <meta name="author" content="Team John Hall">
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/core.css">
+</head>
+<body>
+  <img src="images/medianlikesposts.jpg" id="bg" alt="">
+
+  <div class="container">
+    <div class="radio-buttons">
+      <ul>
+        <li>
+          <input type="radio" id="mean" name="selector" checked="checked">
+          <label for="mean">Mean</label>
+          <div class="check"></div>
+        </li>
+        
+        <li>
+          <input type="radio" id="median" name="selector">
+          <label for="median">Median</label>
+          
+          <div class="check"><div class="inside"></div></div>
+        </li>
+      </ul>
+    </div>
+    <div class="buttons">
+      <a href="#" class="action-button shadow animate blue" id="blue">Posts</a>
+      <a href="#" class="action-button shadow animate red" id="red">Likes/Posts</a>
+    </div>
+   </div>
+   <div class="hotspots">
+      <a id="hotspot_1" class="action-button" href="https://www.instagram.com/explore/locations/496682/"target="_blank">Choa Chu Kang Stadium</a>
+      <a id="hotspot_2" class="action-button" href="https://www.instagram.com/explore/locations/236040552/bukit-panjang/"target="_blank">Bukit Panjang</a>
+      <a id="hotspot_3" class="action-button" href="https://www.instagram.com/explore/locations/24228751/"target="_blank">NUS</a>
+      <a id="hotspot_4" class="action-button" href="https://www.instagram.com/explore/locations/221618721"target="_blank">Chinatown</a>
+      <a id="hotspot_5" class="action-button" href="https://www.instagram.com/explore/locations/242945248"target="_blank">Esplanade</a>
+      <a id="hotspot_6" class="action-button" href="https://www.instagram.com/explore/locations/433966277"target="_blank">National Stadium</a>
+      <a id="hotspot_7" class="action-button" href="https://www.instagram.com/explore/locations/214104731"target="_blank">National Service Resort Resort & Country Club</a>
+      <a id="hotspot_8" class="action-button" href="https://www.instagram.com/explore/locations/213022996"target="_blank">Ang Mo Kio</a>
+      <a id="hotspot_9" class="action-button" href="https://www.instagram.com/explore/locations/249579353"target="_blank">Woodlands</a>
+      <a id="hotspot_10" class="action-button" href="https://www.instagram.com/explore/locations/64108679"target="_blank">Sentosa Island</a>
+   </div>
+   <div class="title">
+      <a class="action-button" href="#">InstaMap</a>
+   </div>
+   <div class="subtitle">
+      <a class="action-button" href="#">Instagram Hotspots in Singapore</a>
+      <br>
+      <a class="action-button" href="#">Jun Hao, Sumi, Zhang Hao, Zhexian</a>
+   </div>
+</body>
+</html>
+
+
+<script>
+document.getElementById("blue").onclick = function(){myFunctionBlue()};
+function myFunctionBlue() {
+    if(document.getElementById("mean").checked){
+    document.getElementById("bg").src = "images/meanposts.jpg";
+  }
+  else if (document.getElementById("median").checked){
+    document.getElementById("bg").src = "images/medianposts.jpg";
+  } 
+}
+
+document.getElementById("red").onclick = function(){myFunctionRed()};
+function myFunctionRed() {
+  if(document.getElementById("mean").checked){
+    document.getElementById("bg").src = "images/meanlikesposts.jpg";
+  }
+  else if (document.getElementById("median").checked){
+    document.getElementById("bg").src = "images/medianlikesposts.jpg";
+  } 
+}
+
+</script>
